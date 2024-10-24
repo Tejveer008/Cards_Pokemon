@@ -8,7 +8,6 @@ export const App = () => {
   const [search, setSearch] = useState("");
 
   const API = "https://pokeapi.co/api/v2/pokemon?limit=50&offset=0";
-  // subscribe to thapa technical youtube channel: https://www.youtube.com/thapatechnical
 
   const fetchPokemon = async () => {
     try {
@@ -60,7 +59,7 @@ export const App = () => {
     );
   }
 
-  // subscribe to thapa technical youtube channel: https://www.youtube.com/thapatechnical
+
 
   return (
     <>
@@ -78,7 +77,6 @@ export const App = () => {
         </div>
         <div>
           <ul className="cards">
-            {/* {pokemon.map((curPokemon) => { */}
             {searchData.map((curPokemon) => {
               return (
                 <PokemonCards key={curPokemon.id} pokemonData={curPokemon} />
